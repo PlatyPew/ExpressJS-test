@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Title</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+  <% include templates/header.ejs %>
+
+    <h1><%= name %> <%= desc %></h1>
+    <ul>
+        <% for (var i = 0; i < 5; i++) { %>
+        <li>Tuna</li>
+        <% } %>
+    </ul>
+
+  </body>
+</html>
