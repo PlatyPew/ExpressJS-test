@@ -7,13 +7,19 @@
   <body>
 
   <% include templates/header.ejs %>
-
-    <h1><%= name %> <%= desc %></h1>
-    <ul>
-        <% for (var i = 0; i < 5; i++) { %>
-        <li>Tuna</li>
-        <% } %>
-    </ul>
+    <h2><%= name %> <%= desc %></h2>
+    <p>Testing POST Request</p>
+    <form action="/details" method="POST">
+      Name: <input type="text" name="name">
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+    <p>Testing GET Request</p>
+    <form action="/about" method="GET">
+      Name: <input type="text" name="name">
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
 
   </body>
 </html>

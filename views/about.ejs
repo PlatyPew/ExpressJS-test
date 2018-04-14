@@ -8,7 +8,7 @@
 
     <% include templates/header.ejs %>
     <h3>About</h3>
-    <p>My name is <%= name %> and I like pineapples on pizza!</p>
-
+    <p>My name is <%= params.name %> and I like pineapples on pizza!</p>
+    <p>You came from <%= headers.referer %></p>
     </body>
 </html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Details page</title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+    <body>
+        <% include templates/header.ejs %>
+        <h1>Hello <%= params.name %>!</h1>
+        <p>You came from <%= headers.referer %></p>
+    </body>
+</html>
